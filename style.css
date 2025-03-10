@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    overflow: auto;
+    background-color: #FBF0F5;
+    position: relative;
+   
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    z-index: -1;
+   
+
+}
+
+h1 {
+   
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 128px;
+    color: #DE597A;
+     
+}
+.menu{
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 48px;
+    color: #DE597A;
+    background: none; 
+    border: none; 
+    cursor: pointer;
+
+}
+.buttonContainer{
+    display: flex;
+    flex-direction: column; 
+    gap: 30px; 
+    align-items: center; 
+}
+#playButton{
+    
+    padding: 15px 30px;
+}
+#settingsButton
+{
+   
+    
+    padding: 15px 30px;
+}
+
+button:hover{
+    background-color: #ffffff;
+    border-radius: 70%;
+    padding: 10px;
+}
+@keyframes floating{
+    0% { transform: translateY(0); }
+    12.5% { transform: translateY(-1px); }
+    17.5% { transform: translateY(-2px); }
+    25% { transform: translateY(-3px); }
+    30%{ transform: translateY(-4px); }
+    37.5% { transform: translateY(-5px); }
+    42.5% { transform: translateY(-6px); }
+    50% { transform: translateY(-8px); }
+    55.5% { transform: translateY(-6px); }
+    62.5% { transform: translateY(-5px); }
+    67.5% { transform: translateY(-4px); }
+    75% { transform: translateY(-3px); }
+    80%  { transform: translateY(-2px); }
+    87.5% { transform: translateY(-1px); }
+    100% { transform: translateY(0); }
+}
+
+
+.cherry{
+    width: 300px; 
+    height: auto;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+}
+#cherry1{
+    position: absolute;
+    left: 350px;
+    top:150px;
+}
+#cherry3{
+    position: absolute;
+    left: 950px;
+    top:100px;
+
+}
+.strawberry{
+    width: 400px; 
+    height: auto;
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-direction: reverse;
+    animation-iteration-count: infinite; 
+    animation-timing-function: ease-in-out; 
+}
+
+#st1{
+    position: absolute;
+    left: 5%;
+    top: 20px;
+}
+#st2{
+    position: absolute;
+    left: 70%;
+    top: -100px;  
+}
+
+#st4{
+    position: absolute;
+    left: 10%;
+    top: 400px;  
+}
+#st3{
+    position: absolute;
+    left: 70%;
+    top: 300px;  
+}
+
+
+
+#settingPop{
+    display: none;
+    
+    flex-direction: column;
+    gap: 5px;
+    background: rgb(251, 240, 245,0.1);
+    text-align: center;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 24px;
+    border-radius: 20px;
+    color:rgb(99, 166, 166);
+    padding: 70px;
+    border: 5px solid #ffffff1a;
+    box-shadow: 0 4px 30px rgba(222, 89, 122, 0.5);
+    backdrop-filter: blur(30px);
+    position:fixed;
+    z-index: 1010;
+
+}
+
+
+.radiogroup{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    align-items:flex-start;
+    margin-left: 50px;
+}
+
+#settingPop label {
+    display: inline-block;
+    margin-left: 10px; 
+}
+#popclose{
+    background:none;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 24px;
+    color:rgb(99, 166, 166);
+    border: none;
+    
+    position:absolute;
+    left:380px;
+    top: 0px;
+
+}
+#popclose:hover {
+    background: none;
+    padding: 0;
+    color:rgb(66, 110, 110);
+    border-radius: 0;
+}
+
+
